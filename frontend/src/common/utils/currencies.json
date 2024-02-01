@@ -1,0 +1,16 @@
+{
+  "USD": "$",
+  "EUR": "€",
+  "GBP": "£",
+  "AED": "AED",
+  "AUD": "A$",
+  "BRL": "R$",
+  "CAD": "CA$",
+  "INR": "₹",
+  "JPY": "¥",
+  "MXN": "MX$",
+  "SAR": "SAR",
+  "SEK": "SEK",
+  "SGD": "SGD",
+  "TRY": "TRY"
+}

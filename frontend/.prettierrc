@@ -1,0 +1,6 @@
+{
+    "extends": ["@imaginary-cloud/prettier-config"],
+    "prettier.semi": true,
+    "prettier.singleQuote": false
+}
+  

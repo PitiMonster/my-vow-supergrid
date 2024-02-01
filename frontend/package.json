@@ -1,0 +1,61 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@aleph/supergrid": "^1.5.0-rc.1",
+    "@headlessui/react": "^1.7.18",
+    "@popperjs/core": "^2.11.8",
+    "@tanstack/react-query": "^5.17.15",
+    "@tanstack/react-query-devtools": "^5.17.18",
+    "axios": "^1.6.5",
+    "date-fns": "^3.3.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-popper": "^2.3.0",
+    "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "@imaginary-cloud/eslint-config-react": "^2.0.1",
+    "@imaginary-cloud/prettier-config": "^1.0.0",
+    "@tanstack/eslint-plugin-query": "^5.17.7",
+    "@types/react": "^18.2.43",
+    "@types/react-datepicker": "^4.19.5",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^26.9.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "prettier": "2.8.0",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "overrides": {
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint-plugin-jest": "^26.9.0",
+    "@typescript-eslint/parser": "^6.14.0"
+  }
+}
