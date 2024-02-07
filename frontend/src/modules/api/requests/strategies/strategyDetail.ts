@@ -8,27 +8,28 @@ import {
 } from "modules/Strategies/types";
 
 export const getCampaignsList = (id: string, params: StrategyQueryParams) =>
-  get<Campaign[]>(`/campaigns/${id}/orders/`, { params });
+  get<Campaign[]>(`/strategies/${id}/campaigns/`, { params });
 
 export const archiveCampaignsFromStrategy = (data: {
   strategyId: string;
   data: ArchiveCampaignsFromStrategyPayload;
-}) => post(`/campaigns/${data.strategyId}/orders/archive/`, data.data);
+}) => post(`/strategies/${data.strategyId}/campaigns/archive/`, data.data);
 
 export const archiveAdGroupsFromStrategy = (data: {
   strategyId: string;
   data: ArchiveAdGroupsFromStrategyPayload;
-}) => post(`/campaigns/${data.strategyId}/line-items/archive/`, data.data);
+}) => post(`/strategies/${data.strategyId}/ad-groups/archive/`, data.data);
 
 export const unarchiveCampaignsFromStrategy = (data: {
   strategyId: string;
   data: ArchiveCampaignsFromStrategyPayload;
-}) => post(`/campaigns/${data.strategyId}/orders/unarchive/`, { ...data.data });
+}) =>
+  post(`/strategies/${data.strategyId}/campaigns/unarchive/`, { ...data.data });
 
 export const unarchiveAdGroup = (data: {
   strategyId: string;
   adGroupId: string;
 }) =>
-  post(`/campaigns/${data.strategyId}/line-items/unarchive/`, {
+  post(`/strategies/${data.strategyId}/ad-groups/unarchive/`, {
     object_ids: [data.adGroupId],
   });

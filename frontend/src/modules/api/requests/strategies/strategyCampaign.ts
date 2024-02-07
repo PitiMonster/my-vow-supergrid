@@ -17,7 +17,7 @@ export const getCampaignAdGroups = (data: {
   params: AdGroupsTableParams;
 }) =>
   get<Pagination<CampaignAdGroup>>(
-    `/campaigns/${data.strategyId}/orders/${data.campaignId}/line-items/`,
+    `/strategies/${data.strategyId}/campaigns/${data.campaignId}/ad-groups/`,
     {
       params: data.params,
     }
